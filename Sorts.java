@@ -8,21 +8,16 @@ public class Sorts{
 
     for (int j = 0; j < data.length; j++) {
       for (int i = 0; i < unsorted; i++) { // runs through the code a pair at a time
-        System.out.println("a full pass");
-        System.out.println();
+      //  System.out.println("a full pass");
+      //  System.out.println();
         if (data[i] > data[i+1]) { // if it's out of order
           int yeet = data[i+1];
           data[i+1] = data[i];
           data[i] = yeet;
           countSorts++;
-
-        System.out.println(Arrays.toString(data));
-        System.out.println(unsorted + "Something was sorted");
+      //  System.out.println(Arrays.toString(data));
+      //  System.out.println(unsorted + "Something was sorted");
           }
-        else {
-          System.out.println(Arrays.toString(data));
-          System.out.println(unsorted + "progress as normal");
-        }
       }
 
       if (countSorts == 0) {
